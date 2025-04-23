@@ -42,23 +42,28 @@
 	-->
 	<header id="header">
 		<div class="header-wrapper">
-			<a href="index.html" class="logo-link">
 				<div class="logo-wrapper">
+					<a href="index.html" class="logo-link">
 						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
-					<div class="header-title">
-						<h1>Flint</h1>
-						<h1><span class="nowrap">& Frame</span></h1>
-					</div>
+					</a>
+					<a href="index.html" class="logo-link">
+						<div class="header-title">
+							<h1>Flint</h1>
+							<h1><span class="nowrap">& Frame</span></h1>
+						</div>
+					</a>
 				</div>
 			</a>
 
 			<nav>
-				<ul class="nav-list">
+				<ul class="nav-list header-nav-list">
 					<li><a href="about.html">About</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+
+				<div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
 			</nav>
 		</div>
 	</header>
@@ -225,5 +230,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		function toggleMenu() {
+			const nav = document.querySelector('.header-nav-list');
+			nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+		}
+	</script>
 </body>
 </html>
