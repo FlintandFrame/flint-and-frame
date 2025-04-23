@@ -463,7 +463,7 @@ nav {
 }
 
 @media only screen and (max-width: 465px) {
-	.header-nav-list {
+	header .nav-list {
 		flex-direction: column;
 		align-items: flex-start;
 		background-color: #0f111a;
