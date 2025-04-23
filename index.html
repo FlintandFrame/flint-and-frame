@@ -1,0 +1,229 @@
+<!--
+	Flint & Frame
+	Website builtand designed by N. Wimer.
+	Portfolio site for a solo web developer specializing in clean, design-forward websites.
+	Inspired by retro-modern aesthetics and minimalist structure.
+
+	Created: 2025
+	Last Updated: 4/22/25
+	Technologies: HTML, CSS, Javascript
+	Fonts: JetBrains Mono, Manrope
+	Color Palette: #0f111a (bg), #e5e5e5 (text), #ff3b30 (accent red), #b84040 (glow)
+
+	This site is crafted, not generated
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Page metadata for SEO, responsiveness, and styling -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Flint & Frame is aweb studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
+	<meta name="author" content="N. Wimer" />
+
+	<!-- Title -->
+	<title>Flint & Frame</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<!--
+		Header Section
+		Contains: Logo/Name, Navigation
+	-->
+	<header id="header">
+		<div class="header-wrapper">
+			<a href="index.html" class="logo-link">
+				<div class="logo-wrapper">
+						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
+					<div class="header-title">
+						<h1>Flint</h1>
+						<h1><span class="nowrap">& Frame</span></h1>
+					</div>
+				</div>
+			</a>
+
+			<nav>
+				<ul class="nav-list">
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!--
+		Main Body
+		contains Hero, Featured Projects, Service Teaser
+	-->
+	<main>
+		<!-- 
+			Hero Section
+			Contains a background image, with outer margins and underglow.
+			Text with headline, paragraph, and a CTA in one of the corners of background image.
+		-->
+		<section id="hero-section">
+			<div class="hero-background-wrapper">
+				<div class="hero-content">
+					<h2>Modern sites. Analog soul.</h2>
+					<p>
+						Websites made with the same focus you bring to your own craft. Structured, clear, and designed to quietly stand apart.
+					</p>
+					<div class="hero-button">
+						<a href="projects.html" class="button">
+							See My Work
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--
+			Featured Projects Section
+			Contains a few of my favorite projects set in a CSS created inlay
+		-->
+		<section id="featured-projects-section">
+			<!-- Area inset to contain the projectcards -->
+			<div class="featured-projects-inset">
+
+				<div class="projects-heading">
+					<h2>Featured Work</h2>
+					<div class="projects-button">
+						<a href="projects.html" class="button">See More</a>
+					</div>
+				</div>
+
+				<!-- row of three project cards -->
+				<div class="project-cards-container">
+					<!-- project card 1 -->
+					<div class="project-card">
+						<a href="#nocturne-synth">
+							<div class="screenshot-frame">
+								<img src="./resources/images/nocturne-synth-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<div class="hover-overlay"></div>
+								<div class="over-text">
+									<h2>Nocturne Synth Co.</h2>
+									<p>
+										Retro tech meets modern interface in this dark-mode synth brand concept.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Project card 2 -->
+					<div class="project-card">
+						<a href="#meadow-mill">
+							<div class="screenshot-frame">
+								<img src="./resources/images/meadow-mill-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<div class="hover-overlay"></div>
+								<div class="over-text">
+									<h2>Meadow & Mill</h2>
+									<p>
+										A clean, handcrafted site for an apothecary brand &mdash; blending minimal code with a natural, grounded feel.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Project Card 3 -->
+					<div class="project-card">
+						<a href="#nocturne-synth">
+							<div class="screenshot-frame">
+								<img src="./resources/images/nocturne-synth-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<div class="hover-overlay"></div>
+								<div class="over-text">
+									<h2>Nocturne Synth Co.</h2>
+									<p>
+										Retro tech meets modern interface in this dark-mode synth brand concept.
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 
+			Services Section
+			Contains a quick summary of services offered without much detail, CTA button to go to the services page, and an image
+		-->
+		<section id="services-section">
+			<div class="services-wrapper">
+				<div class="services-content">
+					<h2>What I Can Do For You</h2>
+					<p>
+						I design and build websites that feel as intentional as the work they represent &mdash; clean, responsive, and made to fit your needs with clarity and care.
+					</p>
+					<ul class="services-list">
+						<li>One-Page Websites</li>
+						<li>Creative Portfolios</li>
+						<li>Site Redesigns</li>
+						<li>Design-First Landing Pages</li>
+					</ul>
+					<div class="services-button">
+						<a href="services.html" class="button">See Services</a>
+					</div>
+				</div>
+				<div class="services-image">
+					<img src="./resources/images/services-section.PNG" alt="Services Offered Image">
+				</div>
+			</div>
+		</section>
+		<hr class="section-divider">
+	</main>
+
+	<!--
+		Footer Section
+		Contains logo, second navigation, social links, copyright
+	-->
+	<footer id="footer-section">
+		<div class="footer-navigation">
+			<a href="index.html"><img src="./resources/images/logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
+			<ul class="nav-list">
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="socials-copy">
+			<div class="socials">
+				<ul class="social-icon-list">
+					<li>
+						<a href="#insta"><img src="./resources/images/instagram.PNG" alt="Insta Icon"></a>
+					</li>
+					<li>
+						<a href="#facebook"><img src="./resources/images/facebook.PNG" alt="Facebook Icon"></a>
+					</li>
+					<li>
+						<a href="#LinkedIN"><img src="./resources/images/linkedin.PNG" alt="LinkedIN Icon"></a>
+					</li>
+					<li>
+						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
+					</li>
+					<li>
+						<a href="#email"><img src="./resources/images/email.PNG" alt="Email icon"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+				<p>&copy; 2025 Flint & Frame. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
