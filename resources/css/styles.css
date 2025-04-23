@@ -435,9 +435,30 @@ nav {
 
 
 /* =========== Responsive styles ==========*/
+@media only screen and (max-width: 1200px) {
+	.hero-background-wrapper {
+		background-position: 25% center;
+	}
+}
+
+@media only screen and (max-width: 1005px) {
+	.hero-background-wrapper {
+		background-position: 15% center;
+	}
+}
+
 @media only screen and (max-width: 728px) {
 	.header-title {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.hero-content {
+		top: 1rem;
+		left: 1rem;
+		padding: 1rem;
+		max-width: 24rem;
 	}
 }
 
@@ -449,6 +470,40 @@ nav {
 
 	.hero-content: 1rem;
 	top: 1rem;
+}
+
+@media only screen and (max-width: 595px) {
+	.hero-background-wrapper {
+		position: static;
+		width: calc(100% - 2rem);
+		margin: 1rem auto;
+		min-height: 18rem;
+		background-size: cover;
+		background-position: center;
+		border-radius: 0.5rem;
+		padding: 0;
+	}
+
+	.hero-content {
+		position: static;
+		margin: 1.5rem auto;
+		padding: 1.5rem 1rem;
+		max-width: 26rem;
+		text-align: center;
+		background-color: transparent;
+	}
+
+	.hero-content h1 {
+		font-size: 1.75rem;
+	}
+
+	.hero-content p {
+		font-size: 1rem;
+	}
+
+	.cta-button {
+		margin-top: 1rem;
+	}
 }
 
 @media only screen and (max-width: 560px) {
