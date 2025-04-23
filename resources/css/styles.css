@@ -463,7 +463,12 @@ nav {
 }
 
 @media only screen and (max-width: 465px) {
+	header {
+		position: relative;
+	}
+
 	header .nav-list {
+		display: none;
 		flex-direction: column;
 		align-items: flex-start;
 		background-color: #0f111a;
@@ -476,9 +481,23 @@ nav {
 		z-index: 10;
 		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 	}
-
-	.mobile-menu-icon {
-		display: block;
-	}
 }
 
+header .nav-list li a {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+	text-align: left;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .mobile-menu-icon {
+	display: block;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
+	color: #e5e5e5;
+	z-index: 999;
+	curser: pointer;
+}
