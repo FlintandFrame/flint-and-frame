@@ -28,6 +28,7 @@ a {
 	color: #e5e5e5;
 }
 
+/* Prevents line breaks in text */
 .nowrap {
 	white-space: nowrap;
 }
@@ -41,6 +42,7 @@ a {
 	padding: 1rem 2rem 1rem 2rem;
 }
 
+/* container for Logo Image and Title */
 .logo-wrapper {
 	display: flex;
 	align-items: center;
@@ -51,11 +53,13 @@ a {
 	flex-shrink: 1;
 }
 
+/* Logo Image Sizing and behavior */
 .logo-wrapper img {
 	width: 4rem;
 	height: auto;
 }
 
+/* Styling for Header Title Text */
 .header-title {
 	display: flex;
 	flex-direction: column;
@@ -66,6 +70,7 @@ a {
 	flex-shrink: 1;
 }
 
+/* Makes entire logo/title area clickable */
 .logo-link {
 	display: block;
 	width: 100%;
@@ -77,6 +82,7 @@ nav {
 	display: flex;
 }
 
+/* Styles for navigation list container */
 .nav-list {
 	display: flex;
 	list-style: none;
@@ -85,6 +91,7 @@ nav {
 	gap: 2rem;
 }
 
+/* Link styling inside nav list */
 .nav-list li a {
 	font-size: 1rem;
 	letter-spacing: 0.08rem;
@@ -107,14 +114,17 @@ nav {
 	transition: width 0.3s ease;
 }
 
+/* Hover effect for nav links */
 .nav-list li a:hover {
 	color: #ff3b30;
 }
 
+/* Adds underline effect on hover */
 .nav-list li a:hover::after {
 	width: 100%;
 }
 
+/* Hamburger icon for mobile nav */
 .mobile-menu-icon {
 	display: none;
 	font-size: 2rem;
@@ -130,7 +140,7 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: calc(100% - 6rem);
-	max-width: 87.5rem;
+	max-width: 100%;
 	margin: 1rem 3rem;
 	display: flex;
 	justify-content: center;
@@ -140,12 +150,14 @@ nav {
 	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
 }
 
+/* Background image sizing and layout */
 .hero-background-wrapper img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
 
+/* Container for hero headline, tagline, and CTA */
 .hero-content {
 	position: absolute;
 	top: 2rem;
@@ -154,6 +166,7 @@ nav {
 	max-width: 32rem;
 }
 
+/* Hero section headline */
 .hero-content h2 {
 	font-size: 1.5rem;
 	color: #ff3b30;
@@ -161,6 +174,7 @@ nav {
 	margin-bottom: 0.5rem;
 }
 
+/* Hero section tagline */
 .hero-content p {
 	font-size: 1.2rem;
 	letter-spacing: 0.5;
@@ -185,6 +199,7 @@ nav {
 	cursor: pointer;
 }
 
+/* Animated effect for buttons */
 .button::before {
 	content: '';
 	position: absolute;
@@ -197,11 +212,13 @@ nav {
 	z-index: -1;
 }
 
+/* Button hover styling */
 .button:hover {
 	color: #ff3b30;
 	border-color: #ff3b30;
 }
 
+/* Opacity animation on hover */
 .button:hover::before {
 	opacity: 1;
 }
@@ -237,6 +254,7 @@ nav {
 	text-transform: uppercase;
 }
 
+/* Flex layout for project cards */
 .project-cards-container {
 	display: flex;
 	justify-content: center;
@@ -257,6 +275,7 @@ nav {
 	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
 }
 
+/* Card background */
 .screenshot-frame {
 	display: flex;
 	align-items: center;
@@ -299,6 +318,7 @@ nav {
 	transition: opacity 0.3s ease;
 }
 
+/* Container for text overlay on project hover */
 .over-text {
 	position: absolute;
 	text-align: center;
@@ -332,6 +352,7 @@ nav {
 	padding: 1rem 2rem;
 }
 
+/* Services section tet and list wrapper */
 .services-content {
 	display: flex;
 	flex-direction: column;
@@ -354,6 +375,7 @@ nav {
 	max-width: 30rem;
 }
 
+/* Grid based list of offered services */
 .services-list {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -370,10 +392,12 @@ nav {
 	margin-bottom: 0.5rem;
 }
 
+/* CTA button below services list */
 .services-button {
 	display: flex;
 }
 
+/* Wrapper for image in the services section */
 .services-image {
 	width: 100%;
 	height: auto;
@@ -391,6 +415,13 @@ nav {
 	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
 }
 
+.services-content,
+.services-image {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+/* Horizontal divider between sections */
 .section-divider {
 	width: 14rem;
 	height: 2px;
@@ -405,6 +436,7 @@ nav {
 	padding: 1rem;
 }
 
+/* Container for footer navigation links */
 .footer-navigation {
 	display: flex;
 	flex-direction: column;
@@ -412,6 +444,7 @@ nav {
 	padding: 1rem;
 }
 
+/* Footer logo styling */
 .footer-logo {
 	width: 4rem;
 	margin-bottom: 1rem;
@@ -422,12 +455,14 @@ nav {
 	justify-content: space-between;
 }
 
+/* List of social media icons in footer */
 .social-icon-list {
 	display: flex;
 	list-style: none;
 	gap: 1rem;
 }
 
+/* Footer Copyright text */
 .copy {
 	display: flex;
 	align-items: center;
@@ -438,12 +473,30 @@ nav {
 
 
 /* =========== Responsive styles ==========*/
+
+@media only screen and (min-width: 1620px) {
+	.hero-content {
+		max-width: 48rem;
+		font-size: 1.1rem;
+	}
+
+	.hero-content h2 {
+		font-size: 2.5rem;
+	}
+
+	.hero-content p {
+		font-size: 1.25;
+	}
+}
+
+/* Adjust hero background position and visibility on smaller screens */
 @media only screen and (max-width: 1200px) {
 	.hero-background-wrapper {
 		background-position: 25% center;
 	}
 }
 
+/* Change services list layout to 2 columns for mid-size screens */
 @media only screen and (max-width: 1015px) {
 	.services-list {
 		grid-template-columns: 1fr 1fr;
@@ -456,6 +509,7 @@ nav {
 	}
 }
 
+/* Stack services content and image on mobile */
 @media only screen and (max-width: 940px) {
 	.services-wrapper {
 		flex-direction: column;
@@ -507,6 +561,7 @@ nav {
 	}
 }
 
+/* Stack project cards verically on smaller screens */
 @media only screen and (max-width: 875px) {
 	.project-cards-container {
 		flex-direction: column;
@@ -520,12 +575,14 @@ nav {
 	}
 }
 
+/* Shink header title text on smaller screens */
 @media only screen and (max-width: 728px) {
 	.header-title {
 		display: none;
 	}
 }
 
+/* Reflow hero content for narrow viewports */
 @media only screen and (max-width: 680px) {
 	.hero-content {
 		top: 1rem;
@@ -569,6 +626,7 @@ nav {
 	}
 }
 
+/* Convert navigation to mobile menu layout */
 @media only screen and (max-width: 560px) {
 	.nav-list {
 		gap: 1rem;
@@ -638,6 +696,7 @@ nav {
 	}
 }
 
+/* Stack featured work heading and button on small screens */
 @media only screen and (max-width: 455px) {
 	.projects-heading {
 		display: flex;
