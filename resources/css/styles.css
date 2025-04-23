@@ -552,8 +552,9 @@ nav {
 	header .mobile-menu-icon {
 		display: block;
 		position: absolute;
-		top: 1rem;
+		top: 50%;
 		right: 1rem;
+		transform: translateY(-50%);
 		font-size: 2rem;
 		color: #e5e5e5;
 		z-index: 999;
