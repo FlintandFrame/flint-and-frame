@@ -20,6 +20,7 @@ h1,
 h2,
 h3 {
 	font-family: 'JetBrains Mono', Courier, monospace;
+	color: #ff3b30;
 }
 
 a {
@@ -68,6 +69,10 @@ a {
 	transform: translateY(0.4rem);
 	font-size: clamp(0.8rem, 1.6vw, 1rem);
 	flex-shrink: 1;
+}
+
+.header-title h1 {
+	color: #e5e5e5;
 }
 
 /* Makes entire logo/title area clickable */
@@ -169,7 +174,6 @@ nav {
 /* Hero section headline */
 .hero-content h2 {
 	font-size: 1.5rem;
-	color: #ff3b30;
 	letter-spacing: 0.08rem;
 	margin-bottom: 0.5rem;
 }
@@ -252,6 +256,7 @@ nav {
 	font-size: clamp(.75rem, 2.5vw, 1.5rem);
 	letter-spacing: 0.08rem;
 	text-transform: uppercase;
+	color: #e5e5e5;
 }
 
 /* Flex layout for project cards */
@@ -305,7 +310,6 @@ nav {
 }
 
 .over-text h2 {
-	color: #ff3b30;
 	margin-bottom: 0.5rem;
 }
 
@@ -363,7 +367,6 @@ nav {
 
 .services-content h2 {
 	font-size: 2rem;
-	color: #ff3b30;
 	margin-bottom: 1.5rem;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
@@ -469,6 +472,53 @@ nav {
 	font-size: 0.85rem;
 	opacity: 0.7;
 	letter-spacing: 0.05rem;
+}
+
+
+/* =========== About Page Styles ==========*/
+
+/* layout for intro section */
+.intro-image-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin: 2rem 6rem;
+	max-width: 100%;
+}
+
+.intro-content {
+	width: 60%;
+	max-width: 32rem;
+	padding-right: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.intro-content h2 {
+	font-size: 2.2rem;
+}
+
+.intro-paragraph p {
+	line-height: 1.7;
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.intro-image {
+	width: 30%;
+	max-width: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
 }
 
 
