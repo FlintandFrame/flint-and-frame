@@ -599,6 +599,10 @@ nav {
 	font-size: 2.2rem;
 }
 
+.no-wrap {
+	white-space: nowrap;
+}
+
 .philosophy-paragraph p {
 	line-height: 1.7;
 	margin-bottom: 1.5rem;
@@ -958,6 +962,13 @@ nav {
 @media only screen and (max-width: 645px) {
 	.about-divider {
 		width: 16rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.intro-content .intro-heading,
+	.philosophy-content .philosophy-heading {
+		font-size: 1.7rem;
 	}
 }
 
