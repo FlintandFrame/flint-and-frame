@@ -477,6 +477,7 @@ nav {
 
 /* =========== About Page Styles ==========*/
 
+/* Layout for About page intro section */
 #intro-section {
 	display: flex;
 	justify-content: center;
@@ -495,6 +496,7 @@ nav {
 	padding: 2rem 1.5rem;
 }
 
+/* Text content area on the left side of the intro */
 .intro-content {
 	width: 60%;
 	max-width: 32rem;
@@ -502,7 +504,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .intro-content h2 {
@@ -515,6 +517,7 @@ nav {
 	font-size: 1.1rem;
 }
 
+/* Image container and sizing for the right-side portrait */
 .intro-image {
 	width: 30%;
 	max-width: 20rem;
@@ -529,6 +532,114 @@ nav {
 	height: auto;
 	border-radius: 0.5rem;
 	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+#philosophy-section {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+/* layout for philosophy section */
+.philosophy-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+	flex-direction: row-reverse;
+}
+
+/* Image layout and style for philosophy section */
+.philosophy-image {
+	width: 30%;
+	max-width: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.philosophy-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+/* Text block content beside the philosophy image */
+.philosophy-content {
+	width: 60%;
+	max-width: 48rem;
+	padding-right: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.philosophy-content h2 {
+	font-size: 2.2rem;
+}
+
+.philosophy-paragraph p {
+	line-height: 1.7;
+	margin-bottom: 1.5rem;
+	font-size: 1.1rem;
+}
+
+/* Section containing centered quote with horizontal accent bar */
+#quote-section {
+	position: relative;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+/* Decorative bar crossing behind quote */
+.quote-bar {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 3rem;
+	background-color: #3e4357;
+	z-index: 0;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+/* Quote container stylinlg */
+.quote-box {
+	position: relative;
+	background-color: #3e4357;
+	padding: 2.5rem 3rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	max-width: 42rem;
+	z-index: 10;
+	font-style: italic;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.8;
+	letter-spacing: 0.02rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+/* Author/source styling for quote */
+.quote-box cite {
+	display: block;
+	margin-top: 1.25rem;
+	font-style: normal;
+	font-size: 0.9rem;
+	color: #bfbfbf;
+	letter-spacing: 0.05rem;
+	opacity: 0.8;
 }
 
 
@@ -774,6 +885,12 @@ nav {
 
 /* ========= About Page responsive styles ======== */
 
+@media only screen and (max-width: 1160px) {
+	.philosophy-heading span {
+		display: block;
+	}
+}
+
 @media only screen and (max-width: 935px) {
 	.intro-content {
 		width: 55%;
@@ -788,25 +905,38 @@ nav {
 }
 
 @media only screen and (max-width: 815px) {
-	.intro-image-wrapper {
+	.intro-image-wrapper,
+	.philosophy-wrapper {
 		flex-direction: column;
 		align-items: center;
 		gap: 2rem;
 	}
 
 	.intro-content,
-	.intro-image {
+	.intro-image,
+	.philosophy-content,
+	.philosophy-image {
 		width: 100%;
 		max-width: 32rem;
 		padding: 0 1.5rem;
 	}
 
-	.intro-content {
+	.intro-content,
+	.philosophy-content {
 		text-align: center;
 		align-items: center;
 	}
 
-	.intro-paragraph p {
+	.intro-paragraph p,
+	.philosophy-paragraph p {
 		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.quote-box {
+		max-width: 80%;
+		padding: 1.5rem 1.25rem;
+		margin: 0 auto;
 	}
 }
