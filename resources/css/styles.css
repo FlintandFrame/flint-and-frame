@@ -534,6 +534,20 @@ nav {
 	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
 }
 
+.about-divider-wrapper {
+	display: block;
+	width: 100%;
+}
+
+.about-divider {
+	width: 24rem;
+	height: 2px;
+	margin: 1rem auto 1rem;
+	background: linear-gradient(to right, rgba(255, 59, 48, 0), #ff3b30, rgba(255, 59, 48, 0));
+	border: none;
+	opacity: 0.6;
+}
+
 #philosophy-section {
 	display: flex;
 	justify-content: center;
