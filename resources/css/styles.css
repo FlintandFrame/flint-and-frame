@@ -8,6 +8,7 @@
 /* Base page styels */
 html {
 	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -285,7 +286,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #3e4357;
+	background-color: #1a1c26;
 	width: 100%;
 	height: 100%;
 	border-radius: 0.5rem;
@@ -362,7 +363,7 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	flex: 1;
-	max-width: 38rem;
+	max-width: 32rem;
 }
 
 .services-content h2 {
@@ -660,6 +661,156 @@ nav {
 	opacity: 0.8;
 }
 
+/* =========== Services Page Styles ========= */
+
+#services-page {
+	display: flex;
+	gap: 2rem;
+	max-width: 75rem;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	align-items: flex-start;
+}
+
+.services-list-panel {
+	width: 40%;
+	box-shadow: inset 0 0 .66rem rgba(0, 0, 0, 0.7);
+	padding: 1.5rem 1.5rem 1rem;
+	border-radius: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.service-header-card {
+	width: 100%;
+	max-width: 90%;
+	background-color: #1a1c26;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 0.5rem 1.25rem 1.25rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+.services-page-heading {
+	font-size: 2rem;
+	margin: 0;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.service-card {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 32rem;
+	margin: 0 auto 1rem;
+	padding: 0.1rem;
+	padding-right: 1rem;
+	background-color: #1a1c26;
+	border-radius: .5rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+.service-card.active {
+	background-color: #262935;
+}
+
+.service-icon {
+	width: 6rem;
+	height: 6rem;
+	opacity: 0.85;
+}
+
+.service-summary h3 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.service-summary p {
+	font-size: 0.95rem;
+	margin: 0.25rem 0 0;
+	padding-right: .5rem;
+}
+
+.services-detail-panel {
+	width: 60%;
+	box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.7);
+	padding: 2rem;
+	border-radius: 0.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.services-placeholder {
+	font-style: italic;
+}
+
+.service-detail-card,
+.services-placeholder {
+	background-color: #1a1c26;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+.service-detail-card h3 {
+	margin-top: 0;
+	font-size: 1.75rem;
+}
+
+.service-detail-image {
+	width: 100%;
+	max-width: 48rem;
+	margin: 1rem auto 2rem auto;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.service-detail-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+.service-detail-card p {
+	margin-top: 1rem;
+	line-height: 1.6;
+}
+
+.service-detail-card ul {
+	margin-top: 1rem;
+	padding-left: 0;
+	list-style: none;
+}
+
+.service-detail-card ul li {
+	position: relative;
+	margin-bottom: 0.75rem;
+	padding-left: 1rem;
+	border-left: 3px solid #3e4357;
+}
+
+.service-detail-card hr {
+	margin-top: 1.5rem;
+}
+
+.service-price {
+	margin-top: 2rem;
+	font-size: 0.95rem;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 0.3px;
+}
+
+.back-to-top-wrapper {
+	display: none;
+}
 
 /* =========== Responsive styles ==========*/
 
@@ -975,5 +1126,51 @@ nav {
 @media only screen and (max-width: 420px) {
 	.about-divider {
 		width: 8rem;
+	}
+}
+
+
+/* ============ Services Page Responsive Styles ======= */
+
+@media only screen and (max-width: 940px) {
+	#services-page {
+		flex-direction: column;
+	}
+
+	.service-header-card {
+		max-width: 24rem;
+		margin: 1rem auto;
+	}
+
+	.services-list-panel {
+		margin-bottom: 2rem;
+	}
+
+	.services-list-panel,
+	.services-detail-panel {
+		width: 100%;
+	}
+
+	.back-to-top-wrapper {
+		display: block;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.back-to-top {
+		font-size: 0.85;
+		display: inline-block;
+		font-size: 0.95rem;
+		background-color: #1a1c26;
+		padding: 0.4rem 0.9rem;
+		border: 1px solid #ff3b30;
+		border-radius: 0.25rem;
+		transition: background 0.3s transform 0.2s;
+	}
+
+	.back-to-top:hover {
+		background-color: #2a2d3a;
+		transform: translateY(-2px);
 	}
 }

@@ -1,0 +1,309 @@
+<!--
+	Flint & Frame
+	Website built and designed by N. Wimer.
+	Portfolio site for a solo web developer specializing in clean, design-forward websites.
+	Inspired by retro-modern aesthetics and minimalist structure.
+
+	Created: 2025
+	Last Updated: 4/23/25
+	Technologies: HTML, CSS, Javascript
+	Fonts: JetBrains Mono, Manrope
+	Color Palette: #0f111a (bg), #e5e5e5 (text), #ff3b30 (accent red), #b84040 (glow)
+
+	This site is crafted, not generated
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Page metadata for SEO, responsiveness, and styling -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Flint & Frame is aweb studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
+	<meta name="author" content="N. Wimer" />
+
+	<!-- Title -->
+	<title>Flint & Frame</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<!--
+		Header Section
+		Contains: Logo/Name, Navigation
+	-->
+	<header id="header">
+		<div class="header-wrapper">
+				<div class="logo-wrapper">
+					<a href="index.html" class="logo-link">
+						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
+					</a>
+					<a href="index.html" class="logo-link">
+						<div class="header-title">
+							<h1>Flint</h1>
+							<h1><span class="nowrap">& Frame</span></h1>
+						</div>
+					</a>
+				</div>
+			</a>
+
+			<!-- Navigation List -->
+			<nav>
+				<ul class="nav-list">
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- 
+		Main Section
+		Contains Heading, inset - expandable boxes containing each service, expands to show details
+	-->
+	<main id="top">
+		<section id="services-page">
+			<div class="services-list-panel">
+				<div class="service-header-card">
+					<h2 class="services-page-heading">What I offer</h2>
+				</div>
+				<div class="service-card" onclick="selectService(this, 'starter')">
+					<img src="./resources/images/starter.PNG" alt="Starter Site Logo" class="service-icon">
+					<div class="service-summary">
+						<h3>Starter Site Bundle</h3>
+						<p>A clean, custom one-pager built to launch fast.</p>
+					</div>
+				</div>
+
+				<div class="service-card" onclick="selectService(this, 'portfolio')">
+					<img src="./resources/images/portfolio-bio.PNG" alt="Portfolio + Bio Package Logo" class="service-icon">
+					<div class="service-summary">
+						<h3>Portfolio + Bio Package</h3>
+						<p>A clean portfolio and a bio that sounds like you &mdash; built to share your work and your story.</p>
+					</div>
+				</div>
+
+				<div class="service-card" onclick="selectService(this, 'makeover')">
+					<img src="./resources/images/makeover.PNG" alt="Website Makeovers Logo" class="service-icon">
+					<div class="service-summary">
+						<h3>Website Makeover</h3>
+						<p>A thoughtful redesign that keeps what works and rebuilds what doesn't.</p>
+					</div>
+				</div>
+
+				<div class="service-card" onclick="selectService(this, 'sitekeeping')">
+					<img src="./resources/images/launch-kit.PNG" alt="Launch Kit Logo" class="service-icon">
+					<div class="service-summary">
+						<h3>SiteKeeping</h3>
+						<p>Quiet, ongoing care to keep your site fresh and working right.</p>
+					</div>
+				</div>
+
+				<div class="service-card" onclick="selectService(this, 'launchkit')">
+					<img src="./resources/images/sitekeeping.PNG" alt="SiteKeeping Logo" class="service-icon">
+					<div class="service-summary">
+						<h3>Launch Kit: Email and Microbranding</h3>
+						<p>The small essentials &mdash; email, visuals, and polish &mdash; to help you launch well.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="services-detail-panel" id="service-detail">
+				<div class="services-placeholder">
+					<p>Select a service to see the details.</p>
+				</div>
+			</div>
+			<div class="back-to-top-wrapper">
+				<a href="#top" class="back-to-top">Back to top</a>
+			</div>
+		</section>
+	</main>
+	
+	<!--
+		Footer Section
+		Contains logo, second navigation, social links, copyright
+	-->
+	<footer id="footer-section">
+		<div class="footer-navigation">
+			<a href="index.html"><img src="./resources/images/logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
+			<ul class="nav-list">
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="socials-copy">
+			<div class="socials">
+				<ul class="social-icon-list">
+					<li>
+						<a href="#insta"><img src="./resources/images/instagram.PNG" alt="Insta Icon"></a>
+					</li>
+					<li>
+						<a href="#facebook"><img src="./resources/images/facebook.PNG" alt="Facebook Icon"></a>
+					</li>
+					<li>
+						<a href="#LinkedIN"><img src="./resources/images/linkedin.PNG" alt="LinkedIN Icon"></a>
+					</li>
+					<li>
+						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
+					</li>
+					<li>
+						<a href="#email"><img src="./resources/images/email.PNG" alt="Email icon"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+				<p>&copy; 2025 Flint & Frame. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		function toggleMenu() {
+			const nav = document.querySelector('header .nav-list');
+			nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+		}
+
+		 function selectService(card, serviceKey) {
+		    // Remove .active from all cards
+    		document.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
+
+		    // Add .active to the clicked one
+    		card.classList.add('active');
+
+		    // Replace detail content
+		    const detailPanel = document.getElementById('service-detail');
+		    detailPanel.innerHTML = getServiceContent(serviceKey);
+
+		// Scroll to the detail panel on smaller screens
+		if (window.innerWidth <= 940) {
+			setTimeout(() => {
+				const detailPanel = document.getElementById('service-detail');
+				if (detailPanel) {
+					detailPanel.scrollIntoView({behavior: 'smooth'});
+				}
+			}, 100);
+		}
+		  }
+
+ 		 function getServiceContent(key) {
+		    switch (key) {
+		      case 'starter':
+		        return `
+		        	<div class="service-detail-card">
+		          		<h3>Starter Site Bundle</h3>
+		        		<div class="service-detail-image">
+		        			<img src="./resources/images/starter-site.PNG" alt="Starter Site Bundle Image">
+		        		</div>
+				        <p>A single-page site built with clarity and care — structured to guide, designed to breathe. This is for the dreamers just beginning, the builders starting small, and the brands that don’t need noise to make an impact.</p>
+				        <ul>
+				            <li>Custom layout tailored to your voice</li>
+				            <li>Responsive design for every screen</li>
+		        		    <li>Contact section or call to action</li>
+				            <li>Launch-ready polish</li>
+				        </ul>
+						<hr class="section-divider">
+		        		<p class="service-price">Starting at $450</p>
+		        	</div>
+		        `;
+		
+ 		      case 'portfolio':
+		        return `
+		        	<div class="service-detail-card">
+				        <h3>Portfolio + Bio Package</h3>
+		        		<div class="service-detail-image">
+		        			<img src="./resources/images/portfolio-bio-image.PNG" alt="Portfolio + Bio Package Image">
+		        		</div>
+				        <p>This one’s for the artists, the makers, and the quietly ambitious. I’ll help you craft a clean, custom portfolio that feels like you, paired with a bio that’s structured, sincere, and easy to update when the next chapter unfolds.</p>
+				        <ul>
+				            <li>A portfolio layout designed for your work</li>
+				            <li>A bio that reflects your story</li>
+				        	<li>Optional writing guidance</li>
+				        	<li>Fully responsive design</li>
+				        </ul>
+						<hr class="section-divider">
+		        		<p class="service-price">Starting at $600</p>
+		        	</div>
+			    `;
+		
+ 		     case 'makeover':
+		        return `
+		        	<div class="service-detail-card">
+				        <h3>Website Makeovers</h3>
+		        		<div class="service-detail-image">
+		        			<img src="./resources/images/makeover-image.PNG" alt="Website Makeover Image">
+		        		</div>
+				        <p>Sometimes your site just… isn’t it anymore. Maybe it was rushed. Maybe it never really felt like you. I’ll take what’s working, scrap what’s not, and rebuild it into something clean, functional, and more true to you.</p>
+		        		<ul>
+		            		<li>Full design refresh of your existing site</li>
+				            <li>Updated layout and structure</li>
+				            <li>Brand-consistent styling</li>
+		        		    <li>Mobile and accessibility improvements</li>
+		    		    </ul>
+						<hr class="section-divider">
+		        		<p class="service-price">Custom quotes starting around $500</p>
+		        	</div>
+		        `;
+		
+ 		     case 'launchkit':
+		        return `
+		        	<div class="service-detail-card">
+				        <h3>Launch Kit: Email + Microbranding</h3>
+		        		<div class="service-detail-image">
+		        			<img src="./resources/images/launch-kit-image.PNG" alt="Launch Kit Image">
+		        		</div>
+				        <p>When your site needs a few essential pieces to feel complete — a logo that clicks, an email address that feels real, a color palette that brings it all together. Small but mighty, and completely yours.</p>
+				        <ul>
+					        <li>Setup of branded email address</li>
+				            <li>Color and font pairings to match your vibe</li>
+				            <li>Simple logomark or nameplate (if needed)</li>
+				            <li>Favicons and social media image templates</li>
+				        </ul>
+						<hr class="section-divider">
+		        		<p class="service-price">Starting at $350</p>
+		        	</div>
+		        `;
+		
+ 		     case 'sitekeeping':
+		        return `
+		        	<div class="service-detail-card">
+				        <h3>SiteKeeping</h3>
+		        		<div class="service-detail-image">
+		        			<img src="./resources/images/sitekeeping-image.PNG" alt="SiteKeeping Image">
+		        		</div>
+				        <p>Websites don’t water themselves. This service is for the quiet care and seasonal attention your site deserves — gentle updates, small refreshes, and help when something feels off.</p>
+				        <ul>
+				            <li>Monthly or seasonal support</li>
+				            <li>Light edits and updates</li>
+				            <li>Content tweaks or image swaps</li>
+				            <li>Design polish over time</li>
+				        </ul>
+						<hr class="section-divider">
+		        		<p class="service-price">Ongoing support starting at $150/quarter</p>
+		        	</div>
+		        `;
+		
+ 		     default:
+	        	return `
+	        		<div class="services-placeholder">
+	        			<p>Select a service to see the details.</p>
+	        		</div>
+	        	`;
+		    }
+		}
+	</script>
+</body>
+</html>
