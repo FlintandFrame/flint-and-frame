@@ -1,9 +1,8 @@
 <!--
-	About - Flint & Frame
+	Contact - Flint & Frame
 
-	A brief look at the person behind the build.
-	This page shares the mindset, values, and philosophy that shape the work.
-	Rooted in nalog process, clean structure, and quiet intention.
+	The invitation to connect. This page opens the door to conversation,
+	collaboration, and custom work - whether you're ready to begin or just have qestions
 
 		Written by N. Wimer
 		Last Updated: 4/24/25
@@ -23,7 +22,7 @@
 	<meta name="author" content="N. Wimer" />
 
 	<!-- Title -->
-	<title>About &mdash; Flint & Frame</title>
+	<title>Services &mdash; Flint & Frame</title>
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,78 +66,56 @@
 		</div>
 	</header>
 
-	<!--
-		Main Section
-		Contains Intro/Bio section, Philosophy section, Qoute
-	-->
 	<main>
-		<!--
-			Intro Section
-			Contains Bio on left, illustrated headshot on right
-		-->
-		<section id="intro-section">
-			<!-- Wraps both the content div and image div -->
-			<div class="intro-image-wrapper">
-				<div class="intro-content">
-					<h2 class="intro-heading">Inside the Frame</h2>
-					<div class="intro-paragraph">
-						<p>
-							I've always had a good eye &mdash; first through a camera, now through code. Design has been part of my life since I was a kid, playing with layouts and writing code just to see what would happen. These days, it's more focused: clean, functional websites made for small businesses and artists who are out there doing the real work.
-						</p>
-						<p>
-							Flint & Frame is my next chapter &mdash; a way to work with purpose, support the community I care about, and claim a little more freedom in the process. I take each project seriously because I know what it means to put something of your own out into the world.
-						</p>
-					</div>
-				</div>
-				<div class="intro-image">
-					<img src="./resources/images/head-shot.PNG" alt="N. Wimer Headshot">
-				</div>
+		<section id="contact-intro">
+			<h2>Start the Conversation</h2>
+			<p>
+				Whether you're sketching your first idea or refining what's already in motion, this is the place to reach out. I keep things simple, focused, and tailored to fit &mdash; just send a note when you're ready.
+			</p>
+		</section>
+
+		<section id="contact-columns">
+			<div id="contact-form-container">
+				<form action="https://formspree.io/f/mpwdwqev" class="contact-form" method="post">
+					<input type="hidden" name="_redirect" value="https://www.flintandframe.com/thank-you.html">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+	
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+	
+					<label for="service">What are you contacting me about?</label>
+					<select id="service" name="service">
+						<option value="starter">Starter Site Bundle</option>
+						<option value="portfolio">Portfolio + Bio Package</option>
+						<option value="makeover">Website Makeover</option>
+						<option value="sitekeeping">SiteKeeping</option>
+						<option value="launch">Launch Kit: Email + Microbranding</option>
+						<option value="other">Something else</option>
+					</select>
+	
+					<label for="message">Tell me about your project</label>
+					<textarea id="message" name="message" rows="6" required></textarea>
+					<button type="submit" class="submit-button button">Send Message</button>
+				</form>
+			</div>
+			<div class="contact-image-container">
+				<img src="./resources/images/contact.PNG" alt="Contact Logo" class="contact-image">
 			</div>
 		</section>
 
-		<div class="about-divider-wrapper">
-			<hr class="about-divider">
-		</div>
-
-		<!--
-			Philosophy Section
-			Contains an image on the left and a philosophy paragraph on the right
-		-->
-		<section id="philosophy-section">
-			<div class="philosophy-wrapper">
-				<div class="philosophy-content">
-					<h2 class="philosophy-heading">
-						<span>Tools Change.</span> <span class="no-wrap">Principles Don't.</span>
-					</h2>
-					<div class="philosophy-paragraph">
-						<p>
-							I start every project with pen and paper &mdash; it helps me slow down, think clearly, and design with purpose. I've always leaned towards a back to basics mindset. The tools are digital, but the approach is analog: listen first, sketch it out, then build it right.
-						</p>
-						<p>
-							I believe good design doesn't need to shout. It just needs to work, to feel right, and to support real people doing real work. Every project gets the same care I'd give my own &mdash; thoughtful, focused and built to last.
-						</p>
-					</div>
-				</div>
-				<div class="philosophy-image">
-					<img src="./resources/images/philosophy-image.PNG" alt="Philosophy Image">
-				</div>
-			</div>
-		</section>
-
-		<!--
-			Just a simple quote and a call to action
-		-->
-		<section id="quote-section">
-			<div class="quote-bar"></div>
-			<div class="quote-background">
-				<blockquote class="quote-box">
+		<section id="email-direct-section">
+			<div class="email-bar quote-bar"></div>
+			<div class="email-background">
+				<div class="email-box quote-box">
 					<p>
-						Our life is frittered away by detail... Simplify, simplify.		
+						Prefer email? Reach me directly at<br>
+						<a href="mailto:contact@flintandframe.com">contact@flintandframe.com</a>
 					</p>
-					<cite>
-						&mdash; Henry David Thoreau
-					</cite>
-				</blockquote>
+					<p class="response-time">
+						I usually reply within 1-2 business days &mdash; crafted, not rushed.
+					</p>
+				</div>
 			</div>
 		</section>
 	</main>

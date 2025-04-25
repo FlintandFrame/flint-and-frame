@@ -755,7 +755,7 @@ nav {
 	background-color: #1a1c26;
 	padding: 2rem;
 	border-radius: 0.5rem;
-	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+	box-shadow: 0 0.75rem 1rem -0.3rem rgba(184, 64, 64, 0.2);
 }
 
 .service-detail-card h3 {
@@ -810,6 +810,127 @@ nav {
 
 .back-to-top-wrapper {
 	display: none;
+}
+
+
+/* =========== Contact Page Styles ========= */
+#contact-intro {
+	max-width: 42rem;
+	margin: 0 auto 4rem auto;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 0.5rem;
+	background-color: #1a1c26;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+#contact-intro h2 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: #ff3b30;
+	margin-bottom: 1rem;
+}
+
+#contact-intro p {
+	font-size: 1.1rem;
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+#contact-columns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	max-width: 90rem;
+	margin: 0 auto 6rem;
+	padding: 0 1rem;
+	flex-wrap: wrap;
+}
+
+.contact-form-container {
+	flex: 1 1 32.5rem;
+	max-width: 37.5rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+	background-color: #1a1b22;
+	border: 1px solid #2e2f38;
+	font-size: 1rem;
+	color: #e5e5e5;
+	padding: 0.6rem 0.6rem;
+	border-radius: 0.4rem;
+	width: 100%;
+	font-family: inherit;
+	transition: border 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: #ff3b30;
+}
+
+.contact-form label {
+	display: block;
+	font-size: 0.95rem;
+	letter-spacing: 0.1rem;
+	margin-top: 1rem;
+	margin-bottom: 0.25;
+}
+
+.contact-form .submit-button {
+	color: #e5e5e5;
+	width: fit-content;
+	align-self: center;
+	margin-top: 2rem;
+}
+
+.contact-image-container {
+	flex: 1 1 30rem;
+	max-width: 34.38rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.contact-image {
+	width: 100%;
+	max-width: 30rem;
+	height: 550px;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+#email-direct-section {
+	align-items: center;
+	position: relative;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-top: 6rem;
+}
+
+.email-box a {
+	color: #ff3b30;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.email-box .response-time {
+	font-size: 0.95rem;
+	font-style: italic;
+	margin-top: 1rem;
 }
 
 /* =========== Responsive styles ==========*/

@@ -1,14 +1,12 @@
 <!--
-	Flint & Frame
-	Website built and designed by N. Wimer.
-	Portfolio site for a solo web developer specializing in clean, design-forward websites.
-	Inspired by retro-modern aesthetics and minimalist structure.
+	Services - Flint & Frame
 
-	Created: 2025
-	Last Updated: 4/23/25
-	Technologies: HTML, CSS, Javascript
-	Fonts: JetBrains Mono, Manrope
-	Color Palette: #0f111a (bg), #e5e5e5 (text), #ff3b30 (accent red), #b84040 (glow)
+	A closer look at the offerings and the philosphy behind them.
+	Each service is built for clarity, creativity, and practical impact -
+	shaped by thoughtful process and a dedication to doing things right.
+
+		Written by N. Wimer
+		Last Updated: 4/24/25
 
 	This site is crafted, not generated
 -->
@@ -25,7 +23,7 @@
 	<meta name="author" content="N. Wimer" />
 
 	<!-- Title -->
-	<title>Flint & Frame</title>
+	<title>Services &mdash; Flint & Frame</title>
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,11 +72,15 @@
 		Contains Heading, inset - expandable boxes containing each service, expands to show details
 	-->
 	<main id="top">
+		<!-- Services Page Layout: Two-Column Panel -->
 		<section id="services-page">
+			<!-- Left Panel: List of Service Options -->
 			<div class="services-list-panel">
+				<!-- Section Title Card -->
 				<div class="service-header-card">
 					<h2 class="services-page-heading">What I offer</h2>
 				</div>
+				<!-- Service Card: Individual Clickable Option -->
 				<div class="service-card" onclick="selectService(this, 'starter')">
 					<img src="./resources/images/starter.PNG" alt="Starter Site Logo" class="service-icon">
 					<div class="service-summary">
@@ -120,11 +122,14 @@
 				</div>
 			</div>
 
+			<!-- Right Panel: Service Details Loaded Here -->
 			<div class="services-detail-panel" id="service-detail">
+				<!-- Placeholder Message Before a Service is Selected -->
 				<div class="services-placeholder">
 					<p>Select a service to see the details.</p>
 				</div>
 			</div>
+			<!-- Back to Top Button (Only for Mobile) -->
 			<div class="back-to-top-wrapper">
 				<a href="#top" class="back-to-top">Back to top</a>
 			</div>
@@ -161,7 +166,7 @@
 						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
 					</li>
 					<li>
-						<a href="#email"><img src="./resources/images/email.PNG" alt="Email icon"></a>
+						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email.PNG" alt="Email me"></a>
 					</li>
 				</ul>
 			</div>
