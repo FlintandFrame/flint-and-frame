@@ -661,6 +661,229 @@ nav {
 	opacity: 0.8;
 }
 
+
+/* ========== Projects Page Styles ========= */
+
+#projects-intro {
+	width: 100%;
+	padding: 0.5rem 1rem 2rem 1rem;
+	text-align: center;
+}
+
+.projects-intro-wrapper {
+	max-width: 55rem;
+	margin: 1rem auto 0;
+	padding: 1rem 2rem 2rem;
+	border-radius: 0.5rem;
+	background-color: #1a1c26;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+.projects-page-heading {
+	font-size: 2.8rem;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	margin-bottom: 1rem;
+}
+
+.projects-description {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.6;
+	max-width: 55rem;
+	margin: 0 auto;
+}
+
+#featured-project {
+	width: 100%;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.project-card-wrapper {
+	box-shadow: inset 0 0 0.66rem rgba(0, 0, 0, 0.7);
+	border-radius: 0.75rem;
+	padding: 2rem;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.featured-project-card {
+	background-color: #1a1c26;
+	border-radius: 0.75rem;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	box-shadow: 0 0.75rem 1.25rem -0.25rem rgba(184, 64, 64, 0.2);
+}
+
+.project-image {
+	flex: 1 1 52%;
+	min-width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	object-fit: contain;
+}
+
+.project-details {
+	flex: 1 1 48%;
+	min-width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.project-title {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.project-summary {
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+.project-tags {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.5rem 1rem;
+}
+
+.project-tags li {
+	font-size: 0.9rem;
+	border-left: 3px solid #3e4357;
+	padding-left: 1rem;
+}
+
+.project-link {
+	font-size: 1rem;
+	border-bottom: 1px solid #e5e5e5;
+	transition: all 0.3s ease;
+	align-self: center;
+}
+
+.project-link:hover {
+	color: #ff3b30;
+	border-color: #ff3b30;
+}
+
+.thumbnail-grid {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.thumbnail-card {
+	background-color: #1a1c26;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+	width: fit-content;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.thumbnail-card img {
+	width: 100%;
+	height: auto;
+	max-width: 280px;
+	aspect-ratio: 280 / 180;
+	border-radius: 0.5rem;
+	object-fit: contain;
+	display: block;
+}
+
+.thumbnail-overlay {
+	position: absolute;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 0.75rem;
+}
+
+.thumbnail-card:hover .thumbnail-overlay {
+	opacity: 1;
+}
+
+.thumbnail-overlay h4 {
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+	color: #ff3b30;
+}
+
+.thumbnail-overlay p {
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+.thumbnail-overlay hr,
+.thumbnail-overlay p {
+	margin: 0;
+	padding: 0;
+}
+
+.thumbail-card.active {
+	outline: 2px solid #e5e5e5;
+	outline-ffset: -8px;
+}
+
+.floating-cta {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	left: auto;
+	background-color: #1a1c26;
+	padding: 0.75rem 1.5rem;
+	border-radius: 1.5rem;
+	font-family: "JetBrains Mono", monospace;
+	font-size: 0.9rem;
+	border: 2px solid #e5e5e5;
+	display: inline-block;
+	width: auto;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	z-index: 1000;
+}
+
+.floating-cta:hover {
+	background-color: #e5e5e5;
+	color: #1a1c26;
+}
+
+.floating-cta-wrapper {
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+}
+
 /* =========== Services Page Styles ========= */
 
 #services-page {
@@ -815,7 +1038,7 @@ nav {
 
 /* =========== Contact Page Styles ========= */
 #contact-intro {
-	max-width: 42rem;
+	max-width: 50rem;
 	margin: 0 auto 4rem auto;
 	padding: 2rem;
 	text-align: center;
@@ -832,9 +1055,11 @@ nav {
 }
 
 #contact-intro p {
-	font-size: 1.1rem;
-	line-height: 1.7;
-	font-weight: 300;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.6;
+	max-width: 55rem;
+	margin: 0 auto;
 }
 
 #contact-columns {
@@ -932,6 +1157,7 @@ nav {
 	font-style: italic;
 	margin-top: 1rem;
 }
+
 
 /* =========== Responsive styles ==========*/
 
@@ -1293,5 +1519,103 @@ nav {
 	.back-to-top:hover {
 		background-color: #2a2d3a;
 		transform: translateY(-2px);
+	}
+}
+
+/* 
+/* =========== Projects Responsive Styles =========== */
+
+@media only screen and (max-width: 1200px) {
+	.thumbnail-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.thumbnail-card {
+		width: 50%;
+		max-width: 300px;
+	}
+}
+
+@media only screen and (max-width: 1085px) {
+	.featured-project-card {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.project-image,
+	.project-details {
+		flex: 1 1 100%;
+		min-width: auto;
+		padding: 1rem 0;
+	}
+
+	.project-details {
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 999px) {
+	#projects-intro {
+		padding: 0.5rem 0.5rem;
+	}
+
+	.projects-intro-wrapper {
+		max-width: 60%;
+	}
+
+	.projects-page-heading {
+		font-size: 2.2rem;
+	}
+
+	.projects-description {
+		font-size: 1.05rem;
+		line-height: 1.5;
+		max-width: 75%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.floating-cta {
+		padding: 0.5rem 1rem;
+		font-size: 0.85rem;
+		bottom: 1rem;
+		right: 1rem;
+		border-radius: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 632px) {
+	.thumbnail-card {
+		width: 80%;
+		max-width: 360px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.floating-cta {
+		position: static;
+		display: inline-block;
+		margin-top: 1rem;
+		padding: 0.75rem 1.5rem;
+		font-size: 0.95rem;
+		border-radius: 2rem;
+	}
+}
+
+@media only screen and (max-width: 594px) {
+	.project-tags {
+		display: block;
+		gap: 0;
+		text-align: center;
+	}
+
+	.project-tags li {
+		margin-bottom: 0.5rem;
+		text-align: left;
 	}
 }

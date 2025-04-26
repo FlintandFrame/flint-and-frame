@@ -1,0 +1,228 @@
+<!--
+	Projects - Flint & Frame
+
+	A showcase of the work and the thinking behind it. These are crafted
+	solutions - designed to solve, to reflect, and to resonate. Each
+	one is a collaboration, a conversation made visible.
+
+		Written by N. Wimer
+		Last Updated: 4/25/25
+
+	This site is crafted, not generated
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Page metadata for SEO, responsiveness, and styling -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Flint & Frame is aweb studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
+	<meta name="author" content="N. Wimer" />
+
+	<!-- Title -->
+	<title>Services &mdash; Flint & Frame</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<!--
+		Header Section
+		Contains: Logo/Name, Navigation
+	-->
+	<header id="header">
+		<div class="header-wrapper">
+				<div class="logo-wrapper">
+					<a href="index.html" class="logo-link">
+						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
+					</a>
+					<a href="index.html" class="logo-link">
+						<div class="header-title">
+							<h1>Flint</h1>
+							<h1><span class="nowrap">& Frame</span></h1>
+						</div>
+					</a>
+				</div>
+			</a>
+
+			<!-- Navigation List -->
+			<nav>
+				<ul class="nav-list">
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="projects-intro">
+			<div class="projects-intro-wrapper">
+				<h2 class="projects-page-heading">Projects</h2>
+				<p class="projects-description">
+					Each project here was built with care, shaped by clarity and purpose. These examples reflect the range of custom work I offer &mdash; practical, polished, and made to resonate.
+				</p>
+			</div>
+		</section>
+
+		<section id="featured-project">
+			<div class="project-card-wrapper">
+				<div class="featured-project-card">
+					<div class="project-image">
+						<img src="./resources/images/meadow-mill-wide.PNG" alt="Project Screenshot">
+					</div>
+					<div class="project-details">
+						<h3 class="project-title">Meadow & Mill</h3>
+						<p class="project-summary">
+							A soft, nature-inspired website built for an apothecary and artisan goods brand. This custom build included branding, layout design, and responsive structure with a poetic, welcoming tone.
+						</p>
+						<ul class="project-tags">
+							<li>Custom Design</li>
+							<li>CSS Animation</li>
+							<li>HTML/CSS/JavaScript</li>
+							<li>Fully handcrafted, no templates.</li>
+							<li>Mobile-first layout with smooth scaling</li>
+						</ul>
+						<a href="https://flintandframe.github.io/meadow-and-mill-site/" class="project-link">View Project</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="project-thumbnails">
+			<div class="thumbnail-grid">
+				<div class="thumbnail-card active">
+					<img src="./resources/images/meadow-mill-wide.PNG" alt="Meadow & Mill Thumbnail">
+					<div class="thumbnail-overlay">
+						<h4>Meadow & Mill</h4>
+						<p>Branding and custom web design for an artisan apothecary.</p>
+					</div>
+				</div>
+				<div class="thumbnail-card">
+					<img src="./resources/images/nocturne-synth-wide.PNG" alt="Project 2 Thumbnail">
+					<div class="thumbnail-overlay">
+						<h4>Nocturne Synth Co.</h4>
+						<p>Custom web design for a boutique synthesizer brand.</p>
+					</div>
+				</div>
+				<div class="thumbnail-card">
+					<img src="./resources/images/280x180.PNG" alt="Project 3 Thumbnail">
+					<div class="thumbnail-overlay">
+						<h4>Meadow & Mill</h4>
+						<p>short description</p>
+					</div>
+				</div>
+			</div>
+			<div class="floating-cta-wrapper">
+				<a href="/contact.html" class="floating-cta">Start Your Project</a>
+			</div>
+		</section>
+	</main>
+
+	<!--
+		Footer Section
+		Contains logo, second navigation, social links, copyright
+	-->
+	<footer id="footer-section">
+		<div class="footer-navigation">
+			<a href="index.html"><img src="./resources/images/logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
+			<ul class="nav-list">
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="socials-copy">
+			<div class="socials">
+				<ul class="social-icon-list">
+					<li>
+						<a href="#insta"><img src="./resources/images/instagram.PNG" alt="Insta Icon"></a>
+					</li>
+					<li>
+						<a href="#facebook"><img src="./resources/images/facebook.PNG" alt="Facebook Icon"></a>
+					</li>
+					<li>
+						<a href="#LinkedIN"><img src="./resources/images/linkedin.PNG" alt="LinkedIN Icon"></a>
+					</li>
+					<li>
+						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
+					</li>
+					<li>
+						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email.PNG" alt="Email me"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+				<p>&copy; 2025 Flint & Frame. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		function toggleMenu() {
+			const nav = document.querySelector('header .nav-list');
+			nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+		}
+
+		// JavaScript to handle thumbnail clicks and updating featured project
+
+		// Wait for the DOM to fully load
+		document.addEventListener('DOMContentLoaded', function() {
+			const thumbnails = document.querySelectorAll('.thumbnail-card');
+			const featuredImage = document.querySelector('.project-image img');
+			const projectTitle = document.querySelector('.project-title');
+			const projectSummary = document.querySelector('.project-summary');
+			const projectTags = document.querySelector('.project-tags');
+			const projectLink = document.querySelector('.project-link');
+
+		thumbnails.forEach((thumbnail, index) => { thumbnail.addEventListener('click', function() { 
+
+		// Remove "active" class from all thumbnails thumbnails.forEach(thumb => thumb.classList.remove('active')); // Add "active" class to the clicked thumbnail this.classList.add('active');
+
+		// Update the featured project dynamically
+  		// You can adjust this part based on how you want each project to update
+		if (index === 0) {
+		  featuredImage.src = './resources/images/meadow-mill-wide.PNG';
+		  featuredImage.alt = 'Project 1 Screenshot';
+		  projectTitle.textContent = 'Meadow & Mill';
+		  projectSummary.textContent = 'A soft, nature-inspired website built for an apothecary and artisan goods brand. This custom build included branding, layout design, and responsive structure with a poetic, welcoming tone.';
+		  projectTags.innerHTML = '<li>Custom Design</li><li>CSS Animation</li><li>HTML/CSS/JavaScript</li><li>Fully handcrafted, no templates.</li><li>Mobile-first layout with smooth scaling</li>';
+		  projectLink.href = 'https://flintandframe.github.io/meadow-and-mill-site/';
+		}
+		else if (index === 1) {
+		    featuredImage.src = './resources/images/nocturne-synth-wide.PNG';
+		    featuredImage.alt = 'Project 2 Screenshot';
+		    projectTitle.textContent = 'Nocturne Synth Co';
+		    projectSummary.textContent = "A dark, minimalistic website built for Nocturne Synth Co., a boutique synthesizer brand. The design captures a retro-futuristic spirit with clean layouts, subtle animations, and handcrafted code that mirrors the company's soundcraft";
+		    projectTags.innerHTML = '<li>Custom Design</li><li>Responsive Layout</li><li>Retro-Futuristic Branding</li><li>Handwritten HTML/CSS</li>'; 
+		    projectLink.href = '#';
+		  }
+		  else if (index === 2) {
+		    featuredImage.src = './resources/images/project3-hero.PNG';
+		    featuredImage.alt = 'Project 3 Screenshot';
+		    projectTitle.textContent = 'Project Three';
+		    projectSummary.textContent = 'Description for project three goes here.';
+		    projectTags.innerHTML = '<li>Landing Page</li><li>Fast Loading</li>';
+		    projectLink.href = '#';
+		  }
+		  // Add more else if blocks for more projects if needed
+		
+		});
+		
+		}); });
+	</script>
+</body>
+</html>
