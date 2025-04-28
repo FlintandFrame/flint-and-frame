@@ -5,7 +5,7 @@
 	Inspired by retro-modern aesthetics and minimalist structure.
 
 	Created: 2025
-	Last Updated: 4/24/25
+	Last Updated: 4/27/25
 	Technologies: HTML, CSS, Javascript
 	Fonts: JetBrains Mono, Manrope
 	Color Palette: #0f111a (bg), #e5e5e5 (text), #ff3b30 (accent red), #b84040 (glow)
@@ -17,11 +17,23 @@
 
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-672N87SLB8"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){
+  			dataLayer.push(arguments);
+  		}
+  		gtag('js', new Date());
+
+ 		 gtag('config', 'G-672N87SLB8');
+	</script>
+	
 	<!-- Page metadata for SEO, responsiveness, and styling -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Flint & Frame is aweb studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
+	<meta name="description" content="Flint & Frame is a web studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
 	<meta name="author" content="N. Wimer" />
 
 	<!-- Title -->
@@ -34,6 +46,9 @@
 
 	<!-- Stylesheets -->
 	<link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+
+	<!-- Favicon -->
+	<link href="favicon.png" rel="icon" type="image/png" />
 </head>
 <body>
 	<!--
@@ -44,7 +59,7 @@
 		<div class="header-wrapper">
 				<div class="logo-wrapper">
 					<a href="index.html" class="logo-link">
-						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
+						<img src="./resources/images/flint-and-frame-logo.PNG" alt="Flint & Frame web design studio logo">
 					</a>
 					<a href="index.html" class="logo-link">
 						<div class="header-title">
@@ -114,9 +129,9 @@
 				<div class="project-cards-container">
 					<!-- project card 1 -->
 					<div class="project-card">
-						<a href="#nocturne-synth">
+						<a href="projects.html?project=nocturne-synth#featured-project" data-project="nocturne-synth">
 							<div class="screenshot-frame">
-								<img src="./resources/images/nocturne-synth-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<img src="./resources/images/nocturne-synth-thumbnail.PNG" alt="Nocturne Synth Co retro-futuristic synthesizer website preview">
 								<div class="hover-overlay"></div>
 								<div class="over-text">
 									<h2>Nocturne Synth Co.</h2>
@@ -130,9 +145,9 @@
 
 					<!-- Project card 2 -->
 					<div class="project-card">
-						<a href="#meadow-mill">
+						<a href="projects.html?project=meadow-mill#featured-project" data-project="meadow-mill">
 							<div class="screenshot-frame">
-								<img src="./resources/images/meadow-mill-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<img src="./resources/images/meadow-mill-thumbnail.PNG" alt="Meadow & Mill apothecary and artisan goods website preview">
 								<div class="hover-overlay"></div>
 								<div class="over-text">
 									<h2>Meadow & Mill</h2>
@@ -148,12 +163,12 @@
 					<div class="project-card">
 						<a href="#nocturne-synth">
 							<div class="screenshot-frame">
-								<img src="./resources/images/nocturne-synth-ss.PNG" alt="Nocturne Synth Co Screenshot">
+								<img src="./resources/images/nocturne-synth-thumbnail.PNG" alt="Placeholder project thumbnail">
 								<div class="hover-overlay"></div>
 								<div class="over-text">
-									<h2>Nocturne Synth Co.</h2>
+									<h2>Placeholder</h2>
 									<p>
-										Retro tech meets modern interface in this dark-mode synth brand concept.
+										Placeholder content while I work on updating my portfolio.
 									</p>
 								</div>
 							</div>
@@ -186,7 +201,7 @@
 					</div>
 				</div>
 				<div class="services-image">
-					<img src="./resources/images/services-section.PNG" alt="Services Offered Image">
+					<img src="./resources/images/flint-frame-services-image.PNG" alt="Flint & Frame services introduction graphic">
 				</div>
 			</div>
 		</section>
@@ -199,7 +214,7 @@
 	-->
 	<footer id="footer-section">
 		<div class="footer-navigation">
-			<a href="index.html"><img src="./resources/images/logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
+			<a href="index.html"><img src="./resources/images/flint-and-frame-logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
 			<ul class="nav-list">
 				<li><a href="about.html">About</a></li>
 				<li><a href="projects.html">Projects</a></li>
@@ -211,19 +226,19 @@
 			<div class="socials">
 				<ul class="social-icon-list">
 					<li>
-						<a href="#insta"><img src="./resources/images/instagram.PNG" alt="Insta Icon"></a>
+						<a href="#insta"><img src="./resources/images/instagram-icon.PNG" alt="Instagram profile link"></a>
 					</li>
 					<li>
-						<a href="#facebook"><img src="./resources/images/facebook.PNG" alt="Facebook Icon"></a>
+						<a href="#facebook"><img src="./resources/images/facebook-icon.PNG" alt="Facebook profile link"></a>
 					</li>
 					<li>
-						<a href="#LinkedIN"><img src="./resources/images/linkedin.PNG" alt="LinkedIN Icon"></a>
+						<a href="#LinkedIN"><img src="./resources/images/linkedin-icon.PNG" alt="LinkedIn profile link"></a>
 					</li>
 					<li>
-						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
+						<a href="#github"><img src="./resources/images/github-icon.PNG" alt="GitHub profile link"></a>
 					</li>
 					<li>
-						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email.PNG" alt="Email me"></a>
+						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email-icon.PNG" alt="Send an Email"></a>
 					</li>
 				</ul>
 			</div>

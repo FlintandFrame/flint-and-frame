@@ -6,7 +6,7 @@
 	shaped by thoughtful process and a dedication to doing things right.
 
 		Written by N. Wimer
-		Last Updated: 4/24/25
+		Last Updated: 4/27/25
 
 	This site is crafted, not generated
 -->
@@ -15,11 +15,23 @@
 
 <html lang="en">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-672N87SLB8"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){
+  			dataLayer.push(arguments);
+  		}
+  		gtag('js', new Date());
+
+ 		 gtag('config', 'G-672N87SLB8');
+	</script>
+	
 	<!-- Page metadata for SEO, responsiveness, and styling -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Flint & Frame is aweb studio crafting minimal, modern websites for creatives and small businesses. Clean code and sharp, intentional design." />
+	<meta name="description" content="Discover Flint & Frame's web design services &mdash; clean, responsive websites, portfolio packages, website makeovers, and branding kits for small businesses." />
 	<meta name="author" content="N. Wimer" />
 
 	<!-- Title -->
@@ -32,6 +44,9 @@
 
 	<!-- Stylesheets -->
 	<link href="./resources/css/styles.css" type="text/css" rel="stylesheet" />
+
+	<!-- Favicon -->
+	<link href="favicon.png" rel="icon" type="image/png" />
 </head>
 <body>
 	<!--
@@ -42,7 +57,7 @@
 		<div class="header-wrapper">
 				<div class="logo-wrapper">
 					<a href="index.html" class="logo-link">
-						<img src="./resources/images/logo.PNG" alt="Flint & Frame Logo">
+						<img src="./resources/images/flint-and-frame-logo.PNG" alt="Flint & Frame Logo">
 					</a>
 					<a href="index.html" class="logo-link">
 						<div class="header-title">
@@ -82,7 +97,7 @@
 				</div>
 				<!-- Service Card: Individual Clickable Option -->
 				<div class="service-card" onclick="selectService(this, 'starter')">
-					<img src="./resources/images/starter.PNG" alt="Starter Site Logo" class="service-icon">
+					<img src="./resources/images/starter-site-icon.PNG" alt="Starter Site Bundle icon" class="service-icon">
 					<div class="service-summary">
 						<h3>Starter Site Bundle</h3>
 						<p>A clean, custom one-pager built to launch fast.</p>
@@ -90,7 +105,7 @@
 				</div>
 
 				<div class="service-card" onclick="selectService(this, 'portfolio')">
-					<img src="./resources/images/portfolio-bio.PNG" alt="Portfolio + Bio Package Logo" class="service-icon">
+					<img src="./resources/images/portfolio-bio-icon.PNG" alt="Portfolio and Bio Package icon" class="service-icon">
 					<div class="service-summary">
 						<h3>Portfolio + Bio Package</h3>
 						<p>A clean portfolio and a bio that sounds like you &mdash; built to share your work and your story.</p>
@@ -98,7 +113,7 @@
 				</div>
 
 				<div class="service-card" onclick="selectService(this, 'makeover')">
-					<img src="./resources/images/makeover.PNG" alt="Website Makeovers Logo" class="service-icon">
+					<img src="./resources/images/website-makeover-icon.PNG" alt="Website Makeover service icon" class="service-icon">
 					<div class="service-summary">
 						<h3>Website Makeover</h3>
 						<p>A thoughtful redesign that keeps what works and rebuilds what doesn't.</p>
@@ -106,7 +121,7 @@
 				</div>
 
 				<div class="service-card" onclick="selectService(this, 'sitekeeping')">
-					<img src="./resources/images/launch-kit.PNG" alt="Launch Kit Logo" class="service-icon">
+					<img src="./resources/images/launch-kit-icon.PNG" alt="Launch Kit: Email and Microbranding icon" class="service-icon">
 					<div class="service-summary">
 						<h3>SiteKeeping</h3>
 						<p>Quiet, ongoing care to keep your site fresh and working right.</p>
@@ -114,7 +129,7 @@
 				</div>
 
 				<div class="service-card" onclick="selectService(this, 'launchkit')">
-					<img src="./resources/images/sitekeeping.PNG" alt="SiteKeeping Logo" class="service-icon">
+					<img src="./resources/images/sitekeeping-icon.PNG" alt="SiteKeeping service icon" class="service-icon">
 					<div class="service-summary">
 						<h3>Launch Kit: Email and Microbranding</h3>
 						<p>The small essentials &mdash; email, visuals, and polish &mdash; to help you launch well.</p>
@@ -142,7 +157,7 @@
 	-->
 	<footer id="footer-section">
 		<div class="footer-navigation">
-			<a href="index.html"><img src="./resources/images/logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
+			<a href="index.html"><img src="./resources/images/flint-and-frame-logo.PNG" alt="Flint & Frame Logo" class="footer-logo"></a>
 			<ul class="nav-list">
 				<li><a href="about.html">About</a></li>
 				<li><a href="projects.html">Projects</a></li>
@@ -154,19 +169,19 @@
 			<div class="socials">
 				<ul class="social-icon-list">
 					<li>
-						<a href="#insta"><img src="./resources/images/instagram.PNG" alt="Insta Icon"></a>
+						<a href="#insta"><img src="./resources/images/instagram-icon.PNG" alt="Instagram profile link"></a>
 					</li>
 					<li>
-						<a href="#facebook"><img src="./resources/images/facebook.PNG" alt="Facebook Icon"></a>
+						<a href="#facebook"><img src="./resources/images/facebook-icon.PNG" alt="Facebook profile link"></a>
 					</li>
 					<li>
-						<a href="#LinkedIN"><img src="./resources/images/linkedin.PNG" alt="LinkedIN Icon"></a>
+						<a href="#LinkedIN"><img src="./resources/images/linkedin-icon.PNG" alt="LinkedIn profile link"></a>
 					</li>
 					<li>
-						<a href="#github"><img src="./resources/images/github.PNG" alt="GitHub Icon"></a>
+						<a href="#github"><img src="./resources/images/github-icon.PNG" alt="GitHub profile link"></a>
 					</li>
 					<li>
-						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email.PNG" alt="Email me"></a>
+						<a href="mailto:contact@flintandframe.com"><img src="./resources/images/email-icon.PNG" alt="Send an Email"></a>
 					</li>
 				</ul>
 			</div>
@@ -211,7 +226,7 @@
 		        	<div class="service-detail-card">
 		          		<h3>Starter Site Bundle</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/starter-site.PNG" alt="Starter Site Bundle Image">
+		        			<img src="./resources/images/starter-site-service.PNG" alt="Starter Site Bundle Service image">
 		        		</div>
 				        <p>A single-page site built with clarity and care — structured to guide, designed to breathe. This is for the dreamers just beginning, the builders starting small, and the brands that don’t need noise to make an impact.</p>
 				        <ul>
@@ -230,7 +245,7 @@
 		        	<div class="service-detail-card">
 				        <h3>Portfolio + Bio Package</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/portfolio-bio-image.PNG" alt="Portfolio + Bio Package Image">
+		        			<img src="./resources/images/portfolio-bio-service.PNG" alt="Portfolio and Bio Package service image">
 		        		</div>
 				        <p>This one’s for the artists, the makers, and the quietly ambitious. I’ll help you craft a clean, custom portfolio that feels like you, paired with a bio that’s structured, sincere, and easy to update when the next chapter unfolds.</p>
 				        <ul>
@@ -249,7 +264,7 @@
 		        	<div class="service-detail-card">
 				        <h3>Website Makeovers</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/makeover-image.PNG" alt="Website Makeover Image">
+		        			<img src="./resources/images/website-makeover-service.PNG" alt="Website Makeover service image">
 		        		</div>
 				        <p>Sometimes your site just… isn’t it anymore. Maybe it was rushed. Maybe it never really felt like you. I’ll take what’s working, scrap what’s not, and rebuild it into something clean, functional, and more true to you.</p>
 		        		<ul>
@@ -268,7 +283,7 @@
 		        	<div class="service-detail-card">
 				        <h3>Launch Kit: Email + Microbranding</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/launch-kit-image.PNG" alt="Launch Kit Image">
+		        			<img src="./resources/images/launch-kit-service.PNG" alt="Launch Kit Service image">
 		        		</div>
 				        <p>When your site needs a few essential pieces to feel complete — a logo that clicks, an email address that feels real, a color palette that brings it all together. Small but mighty, and completely yours.</p>
 				        <ul>
@@ -287,7 +302,7 @@
 		        	<div class="service-detail-card">
 				        <h3>SiteKeeping</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/sitekeeping-image.PNG" alt="SiteKeeping Image">
+		        			<img src="./resources/images/sitekeeping-service.PNG" alt="SiteKeeping service image">
 		        		</div>
 				        <p>Websites don’t water themselves. This service is for the quiet care and seasonal attention your site deserves — gentle updates, small refreshes, and help when something feels off.</p>
 				        <ul>
