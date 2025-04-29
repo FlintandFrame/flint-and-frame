@@ -26,7 +26,7 @@
 
  		 gtag('config', 'G-672N87SLB8');
 	</script>
-	
+
 	<!-- Page metadata for SEO, responsiveness, and styling -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -104,6 +104,14 @@
 					</div>
 				</div>
 
+				<div class="service-card" onclick="selectService(this, 'landing')">
+					<img src="./resources/images/landing-page-icon.PNG" alt="SiteKeeping service icon" class="service-icon">
+					<div class="service-summary">
+						<h3>Landing Page Package</h3>
+						<p>Simple, one-page site for quick launches or promos.</p>
+					</div>
+				</div>
+
 				<div class="service-card" onclick="selectService(this, 'portfolio')">
 					<img src="./resources/images/portfolio-bio-icon.PNG" alt="Portfolio and Bio Package icon" class="service-icon">
 					<div class="service-summary">
@@ -121,18 +129,10 @@
 				</div>
 
 				<div class="service-card" onclick="selectService(this, 'sitekeeping')">
-					<img src="./resources/images/launch-kit-icon.PNG" alt="Launch Kit: Email and Microbranding icon" class="service-icon">
+					<img src="./resources/images/sitekeeping-icon.PNG" alt="SiteKeeping service icon" class="service-icon">
 					<div class="service-summary">
 						<h3>SiteKeeping</h3>
 						<p>Quiet, ongoing care to keep your site fresh and working right.</p>
-					</div>
-				</div>
-
-				<div class="service-card" onclick="selectService(this, 'launchkit')">
-					<img src="./resources/images/sitekeeping-icon.PNG" alt="SiteKeeping service icon" class="service-icon">
-					<div class="service-summary">
-						<h3>Launch Kit: Email and Microbranding</h3>
-						<p>The small essentials &mdash; email, visuals, and polish &mdash; to help you launch well.</p>
 					</div>
 				</div>
 			</div>
@@ -228,15 +228,16 @@
 		        		<div class="service-detail-image">
 		        			<img src="./resources/images/starter-site-service.PNG" alt="Starter Site Bundle Service image">
 		        		</div>
-				        <p>A single-page site built with clarity and care — structured to guide, designed to breathe. This is for the dreamers just beginning, the builders starting small, and the brands that don’t need noise to make an impact.</p>
+				        <p>Includes all the essentials you need to launch a strong web presence &mdash; mobile-ready, easy to update, and built to grow. Whether you're just starting out or upgrading from a DIY solution, this package lays the groundwork for a site that feels intentional, welcoming, and built to last.</p>
 				        <ul>
+		        			<li>Basic 2 or 3 page site</li>
 				            <li>Custom layout tailored to your voice</li>
 				            <li>Responsive design for every screen</li>
-		        		    <li>Contact section or call to action</li>
-				            <li>Launch-ready polish</li>
+		        		    <li>Contact form setup</li>
+				            <li>Google Analytics setup</li>
 				        </ul>
 						<hr class="section-divider">
-		        		<p class="service-price">Starting at $450</p>
+		        		<p class="service-price">Starting at $675</p>
 		        	</div>
 		        `;
 		
@@ -247,15 +248,17 @@
 		        		<div class="service-detail-image">
 		        			<img src="./resources/images/portfolio-bio-service.PNG" alt="Portfolio and Bio Package service image">
 		        		</div>
-				        <p>This one’s for the artists, the makers, and the quietly ambitious. I’ll help you craft a clean, custom portfolio that feels like you, paired with a bio that’s structured, sincere, and easy to update when the next chapter unfolds.</p>
+				        <p>A clean, professional prsonal website built to showcase your best work and tell your story &mdash; designed for artists, freelancers, entrepreneurs, and creators who need more than just a digitl handshake.</p>
+		        		<p>This package includes everything you need to present your portfolio beautifully, connect with your audience, and build trust online.</p>
 				        <ul>
-				            <li>A portfolio layout designed for your work</li>
-				            <li>A bio that reflects your story</li>
-				        	<li>Optional writing guidance</li>
+				            <li>Custom 3-page website</li>
+				            <li>Personalized portfolio layout</li>
+				        	<li>Integated contact form with clear calls-to-action</li>
 				        	<li>Fully responsive design</li>
+		        			<li>Google Analytics setup</li>
 				        </ul>
 						<hr class="section-divider">
-		        		<p class="service-price">Starting at $600</p>
+		        		<p class="service-price">Starting at $775</p>
 		        	</div>
 			    `;
 		
@@ -266,31 +269,33 @@
 		        		<div class="service-detail-image">
 		        			<img src="./resources/images/website-makeover-service.PNG" alt="Website Makeover service image">
 		        		</div>
-				        <p>Sometimes your site just… isn’t it anymore. Maybe it was rushed. Maybe it never really felt like you. I’ll take what’s working, scrap what’s not, and rebuild it into something clean, functional, and more true to you.</p>
+				        <p>Already have a site, but it's starting to show its age? This package is for creators and small business owners who want to refresh what's already there &mdash; not start over</p>
+		        		<p>We'll work with your existing content and structure, then give it a clean, modern redesign that's faster, clearer, and easier to use.</p>
 		        		<ul>
-		            		<li>Full design refresh of your existing site</li>
-				            <li>Updated layout and structure</li>
+		            		<li>Site audit</li>
 				            <li>Brand-consistent styling</li>
+				            <li>Fresh, modern redesign using your current content</li>
 		        		    <li>Mobile and accessibility improvements</li>
 		    		    </ul>
 						<hr class="section-divider">
-		        		<p class="service-price">Custom quotes starting around $500</p>
+		        		<p class="service-price">Pricing starts at $400 for small sites.<br>Larger makeovers quoted based on scope.</p>
 		        	</div>
 		        `;
 		
- 		     case 'launchkit':
+ 		     case 'landing':
 		        return `
 		        	<div class="service-detail-card">
-				        <h3>Launch Kit: Email + Microbranding</h3>
+				        <h3>Landing Page Package</h3>
 		        		<div class="service-detail-image">
-		        			<img src="./resources/images/launch-kit-service.PNG" alt="Launch Kit Service image">
+		        			<img src="./resources/images/landing-page-service.PNG" alt="Launch Kit Service image">
 		        		</div>
-				        <p>When your site needs a few essential pieces to feel complete — a logo that clicks, an email address that feels real, a color palette that brings it all together. Small but mighty, and completely yours.</p>
+				        <p>Small but mighty. A strong start for businesses that need a simple, powerful online presence. Get a clean, mobile-optimized landing page designed around your goals &mdash; whether you're launching a produt, promoting an event, or just planting your flag online.</p>
 				        <ul>
-					        <li>Setup of branded email address</li>
-				            <li>Color and font pairings to match your vibe</li>
-				            <li>Simple logomark or nameplate (if needed)</li>
-				            <li>Favicons and social media image templates</li>
+					        <li>Custom single-page design</li>
+				            <li>Mobile optimization</li>
+				            <li>Brand alignment</li>
+				            <li>Contact form or main call-to-action</li>
+		        			<li>Google Analytics connection</li>
 				        </ul>
 						<hr class="section-divider">
 		        		<p class="service-price">Starting at $350</p>
@@ -304,15 +309,17 @@
 		        		<div class="service-detail-image">
 		        			<img src="./resources/images/sitekeeping-service.PNG" alt="SiteKeeping service image">
 		        		</div>
-				        <p>Websites don’t water themselves. This service is for the quiet care and seasonal attention your site deserves — gentle updates, small refreshes, and help when something feels off.</p>
+				        <p>Keep your site fresh, secure, and running smoothly &mdash; without lifting a finger.</p>
+		        		<p>SiteKeeping provides ongoing support and small updates, so you can focus on growing your business while we handle the behind-the-scenes work.</p>
 				        <ul>
-				            <li>Monthly or seasonal support</li>
-				            <li>Light edits and updates</li>
-				            <li>Content tweaks or image swaps</li>
-				            <li>Design polish over time</li>
+				            <li>Monthly site health checks</li>
+				            <li>Basic plug-in and system updates</li>
+				            <li>Image and content optimization</li>
+				            <li>Minor content updates</li>
+		        			<li>Priority scheduling for larger updates<li>
 				        </ul>
 						<hr class="section-divider">
-		        		<p class="service-price">Ongoing support starting at $150/quarter</p>
+		        		<p class="service-price">$75/month or $800/year<br>Month-to-month subscription &mdash; cancel anytime</p>
 		        	</div>
 		        `;
 		
