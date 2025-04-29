@@ -1606,6 +1606,29 @@ nav {
 	}
 }
 
+@media (max-width: 768px) {
+
+	.services-page-heading {
+		font-size: clamp(1.5rem, 5vw, 2rem);
+		white-space: nowrap;
+		text-align: center;
+		padding: 0.5rem 0.75rem;
+	}
+	.service-icon {
+		display: none;
+	}
+
+	.service-card {
+		display: block;
+		padding: 1rem;
+		text-align: left;
+	}
+
+	.service-summary {
+		margin-top: 0.5rem;
+	}
+}
+
 /* 
 /* =========== Projects Responsive Styles =========== */
 
