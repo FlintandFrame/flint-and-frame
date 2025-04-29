@@ -1672,17 +1672,34 @@ nav {
 		border-radius: 1.25rem;
 	}
 
+	#featured-project {
+		padding: 1rem;
+	}
+
 	.projects-intro-wrapper {
-		max-width: 90vw;
-		padding: 1rem 1.25rem;
+		max-width: 98vw;
+		padding: 1rem;
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	.project-card-wrapper {
-		max-width: 95vw;
-		padding: 1.5rem 1rem;
+		max-width: 98vw;
+		padding: 1rem;
 		margin: 2rem auto;
+	}
+
+	.featured-project-card {
+		padding: 1rem 0.5rem;
+		gap: 0.5rem;
+		margin: 1.5rem auto;
+	}
+
+	.project-image img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 0.5rem;
 	}
 
 	.project-details {
@@ -1691,6 +1708,22 @@ nav {
 		max-width: 60ch;
 		margin-left: auto;
 		margin-right: auto;
+		padding: 0 0.5rem;
+		text-align: left;
+		max-width: 60ch;
+		margin: 0 auto;
+	}
+
+	.project-tags {
+		margin-bottom: 0.75rem;
+	}
+
+	.project-tags li {
+		margin-bottom: 0.4rem;
+	}
+
+	.project-link {
+		margin-top: 0.5rem;
 	}
 }
 
