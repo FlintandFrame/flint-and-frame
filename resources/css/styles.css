@@ -1292,6 +1292,35 @@ nav {
 	}
 }
 
+.service-price {
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+.service-price s {
+	color: #aaa;
+	font-size: 1rem;
+}
+
+.founder-price {
+	color: #e0352b;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.founders-label {
+	background-color: #e5e5e5;
+	color: #0f111a;
+	font-size: 0.75rem;
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
 
 /* =========== Responsive styles ==========*/
 
