@@ -1232,6 +1232,67 @@ nav {
 }
 
 
+/* ============ Founder's Circle ========== */
+
+.founders-banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(90deg, #d22a24, #a02820);
+	color: #0f111a;
+	margin: 1rem 0 1.5rem 0;
+	padding: 1rem 1.5rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-bottom: 2px solid #0f111a;
+	position: relative;
+	z-index: 10;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.founders-logo {
+	margin: 0.2rem;
+	width: 56px;
+	height: 56px;
+	background-image: url('../images/founders-circle.PNG');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-shring: 0;
+}
+
+.founders-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 1.1;
+}
+
+.founders-banner a {
+	color: #0f111a;
+	text-decoration: underline;
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.founders-banner a:hover {
+	color: #3e4357;
+	text-decoration: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
 /* =========== Responsive styles ==========*/
 
 @media only screen and (min-width: 1620px) {
