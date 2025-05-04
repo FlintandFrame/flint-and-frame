@@ -81,7 +81,15 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 
-				<div class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</div>
+				<div
+					class="mobile-menu-icon"
+					onclick="toggleMenu()"
+					tabindex="button"
+					onkeypress="if(event.key === 'Enter' || event.key === ' ')
+					toggleMenu()"
+				>
+					&#9776;
+				</div>
 			</nav>
 		</div>
 	</header>
