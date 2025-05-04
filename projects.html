@@ -110,21 +110,21 @@
 			<div class="project-card-wrapper">
 				<div class="featured-project-card">
 					<div class="project-image">
-						<img src="./resources/images/meadow-mill-project-large.PNG" alt="Homepage preview of Meadow & Mill website project">
+						<img src="./resources/images/elm-hollow-roasters-project-large.png" alt="Homepage preview of Elm Hollow Roasters">
 					</div>
 					<div class="project-details">
-						<h3 class="project-title">Meadow & Mill</h3>
+						<h3 class="project-title">Elm Hollow Roasters</h3>
 						<p class="project-summary">
-							A soft, nature-inspired website built for an apothecary and artisan goods brand. This custom build included branding, layout design, and responsive structure with a poetic, welcoming tone.
+							Elm Hollow Roasters is a small-batch coffee brand built on intention and care. This site blends cozy, grounded design with modern responsiveness, showcasing their values through thoughtful visuals, custom icons, and a warm user experience.
 						</p>
 						<ul class="project-tags">
 							<li>Custom Design</li>
-							<li>CSS Animation</li>
-							<li>HTML/CSS/JavaScript</li>
+							<li>Custom Iconography</li>
+							<li>Brand Driven Aesthetic</li>
 							<li>Fully handcrafted, no templates.</li>
 							<li>Mobile-first layout with smooth scaling</li>
 						</ul>
-						<a href="https://flintandframe.github.io/meadow-and-mill-site/" class="project-link">View Project</a>
+						<a href=" https://flintandframe.github.io/elm-hollow-roasters/" class="project-link">View Project</a>
 					</div>
 				</div>
 			</div>
@@ -132,11 +132,11 @@
 
 		<section id="project-thumbnails">
 			<div class="thumbnail-grid">
-				<div class="thumbnail-card active" data-project="meadow-mill">
-					<img src="./resources/images/meadow-mill-project-thumb.PNG" alt="Thumbnail view of Meadow & Mill website project">
+				<div class="thumbnail-card active" data-project="elm-hollow-roasters">
+					<img src="./resources/images/elm-hollow-roasters-project-thumb.PNG" alt="Thumbnail view of Elm Hollow Roasters website project">
 					<div class="thumbnail-overlay">
-						<h4>Meadow & Mill</h4>
-						<p>Branding and custom web design for an artisan apothecary.</p>
+						<h4>Elm Hollow Roasters</h4>
+						<p>A warm, handcrafted site for a small-batch coffee roaster rooted in stillness, care, and community.</p>
 					</div>
 				</div>
 				<div class="thumbnail-card" data-project="nocturne-synth">
@@ -146,11 +146,11 @@
 						<p>Custom web design for a boutique synthesizer brand.</p>
 					</div>
 				</div>
-				<div class="thumbnail-card">
-					<img src="./resources/images/280x180.PNG" alt="Project 3 Thumbnail">
+				<div class="thumbnail-card active" data-project="meadow-mill">
+					<img src="./resources/images/meadow-mill-project-thumb.PNG" alt="Thumbnail view of Meadow & Mill website project">
 					<div class="thumbnail-overlay">
 						<h4>Meadow & Mill</h4>
-						<p>short description</p>
+						<p>Branding and custom web design for an artisan apothecary.</p>
 					</div>
 				</div>
 			</div>
@@ -224,12 +224,12 @@
 		// Update the featured project dynamically
   		// You can adjust this part based on how you want each project to update
 		if (index === 0) {
-		  featuredImage.src = './resources/images/meadow-mill-project-large.PNG';
-		  featuredImage.alt = 'Homepage preview of Meadow & Mill website project';
-		  projectTitle.textContent = 'Meadow & Mill';
-		  projectSummary.textContent = 'A soft, nature-inspired website built for an apothecary and artisan goods brand. This custom build included branding, layout design, and responsive structure with a poetic, welcoming tone.';
-		  projectTags.innerHTML = '<li>Custom Design</li><li>CSS Animation</li><li>HTML/CSS/JavaScript</li><li>Fully handcrafted, no templates.</li><li>Mobile-first layout with smooth scaling</li>';
-		  projectLink.href = 'https://flintandframe.github.io/meadow-and-mill-site/';
+		  featuredImage.src = './resources/images/elm-hollow-roasters-project-large.png';
+		  featuredImage.alt = 'Homepage preview of Elm Hollow Roasters website project';
+		  projectTitle.textContent = 'Elm Hollow Roasters';
+		  projectSummary.textContent = 'Elm Hollow Roasters is a small-batch coffee brand built on intention and care. This site blends cozy, grounded design with modern responsiveness, showcasing their values through thoughtful visuals, custom icons, and a warm user experience.';
+		  projectTags.innerHTML = '<li>Custom Design</li><li>Custom Iconography</li><li>Brand Driven Aesthetic</li><li>Fully handcrafted, no templates.</li><li>Mobile-first layout with smooth scaling</li>';
+		  projectLink.href = 'https://flintandframe.github.io/elm-hollow-roasters/';
 		}
 		else if (index === 1) {
 		    featuredImage.src = './resources/images/nocturne-synth-project-large.PNG';
@@ -240,13 +240,13 @@
 		    projectLink.href = '#';
 		  }
 		  else if (index === 2) {
-		    featuredImage.src = './resources/images/nocturne-synth-project-large.PNG';
-		    featuredImage.alt = 'Placeholder for project 3';
-		    projectTitle.textContent = 'Project Three';
-		    projectSummary.textContent = 'Placeholder while updating my portfolio.';
-		    projectTags.innerHTML = '<li>Landing Page</li><li>Fast Loading</li>';
-		    projectLink.href = '#';
-		  }
+		  featuredImage.src = './resources/images/meadow-mill-project-large.PNG';
+		  featuredImage.alt = 'Homepage preview of Meadow & Mill website project';
+		  projectTitle.textContent = 'Meadow & Mill';
+		  projectSummary.textContent = 'A soft, nature-inspired website built for an apothecary and artisan goods brand. This custom build included branding, layout design, and responsive structure with a poetic, welcoming tone.';
+		  projectTags.innerHTML = '<li>Custom Design</li><li>CSS Animation</li><li>HTML/CSS/JavaScript</li><li>Fully handcrafted, no templates.</li><li>Mobile-first layout with smooth scaling</li>';
+		  projectLink.href = 'https://flintandframe.github.io/meadow-and-mill-site/';
+		}
 		  // Add more else if blocks for more projects if needed
 		
 		});

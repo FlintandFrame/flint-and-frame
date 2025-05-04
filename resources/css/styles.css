@@ -167,12 +167,6 @@ nav {
 	color: #e5e5e5;
 }
 
-.mobile-menu-icon,
-.nav-list {
-	position: relative;
-	z-index: 100;
-}
-
 /* Hero section styles */
 .hero-background-wrapper {
 	position: relative;
