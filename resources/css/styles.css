@@ -59,6 +59,28 @@ a {
 	color: #e5e5e5;
 }
 
+a:focus,
+button:focus {
+	outline: 2px solid #e5e5e5
+	outline-offset: 3px;
+	border-radius: 0.25rem;
+	background-color: rgba(255, 59, 48, 0.1);
+}
+
+nav a:focus {
+	border-bottom: 2px solid #ff3b30;
+}
+
+.footer-navigation a:focus {
+	outline: 2px dashed #b84040;
+	outline-offset: 4px;
+}
+
+.cta-button:focus {
+	box-shadow: 0 0 0 4px rgba(184, 64, 64, 0.4);
+	background-color: rgba(255, 59, 48, 0.1);
+}
+
 /* Prevents line breaks in text */
 .nowrap {
 	white-space: nowrap;
@@ -170,7 +192,7 @@ nav {
 /* Hero section styles */
 .hero-background-wrapper {
 	position: relative;
-	background-image: url('../images/hero-background-flint-frame.PNG');
+	background-image: url('../images/hero-background-flint-frame.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
